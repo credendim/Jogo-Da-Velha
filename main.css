@@ -20,6 +20,16 @@ body {
     justify-content: center;
     width: 100px;
     height: 100px;
+    cursor: pointer;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
 }
 
 span {
@@ -48,4 +58,9 @@ span {
 .container > div:nth-child(6) {
     border-top: black solid 1px;
     border-bottom: black solid 1px;
+}
+
+.active{
+    background-color: rgb(199, 211, 223);
+    cursor: not-allowed;
 }
