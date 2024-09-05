@@ -313,3 +313,56 @@ btn9.addEventListener('click', ()=> {
     }
     clicked9 = true
 });
+
+const restart = document.querySelector(".restart")
+
+restart.addEventListener('click', ()=> {
+turn = 1
+round = 1
+
+clicked1 = false
+clicked2 = false
+clicked3 = false
+clicked4 = false
+clicked5 = false
+clicked6 = false
+clicked7 = false
+clicked8 = false
+clicked9 = false
+
+btnvalue1 = 0
+btnvalue2 = 0
+btnvalue3 = 0
+btnvalue4 = 0
+btnvalue5 = 0
+btnvalue6 = 0
+btnvalue7 = 0
+btnvalue8 = 0
+btnvalue9 = 0
+
+btnclicked = 0
+
+victory = false
+
+btn1.classList.remove('active');
+btn2.classList.remove('active');
+btn3.classList.remove('active');
+btn4.classList.remove('active');
+btn5.classList.remove('active');
+btn6.classList.remove('active');
+btn7.classList.remove('active');
+btn8.classList.remove('active');
+btn9.classList.remove('active');
+
+document.getElementById('symbol1').textContent = ""
+document.getElementById('symbol2').textContent = ""
+document.getElementById('symbol3').textContent = ""
+document.getElementById('symbol4').textContent = ""
+document.getElementById('symbol5').textContent = ""
+document.getElementById('symbol6').textContent = ""
+document.getElementById('symbol7').textContent = ""
+document.getElementById('symbol8').textContent = ""
+document.getElementById('symbol9').textContent = ""
+
+text.innerHTML = ""
+});
