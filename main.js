@@ -370,7 +370,7 @@ btn9.addEventListener('click', ()=> {
         symbol()
         viccheck()
         round ++
-    } else {
+    } else {.
         console.log("nao")
     }
     clicked9 = true
