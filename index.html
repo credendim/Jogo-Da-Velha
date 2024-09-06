@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body class="body">
     <h1>Jogo Da Velha</h1>
     <div class="container">
         <!-- 
@@ -61,8 +61,23 @@
             </span>
         </div>
     </div>
-    <button class="restart">reiniciar</button>
+    <div class="restartbar">
+    </div>
+    <span id="restart" class="material-symbols-outlined">
+        restart_alt
+    </span>
     <h1 id="text" ></h1>
+    <div class="pontos">
+        <h1>Pontos:</h1>
+        <div>
+            <h2 class="X">X</h2>
+            <h2 class="point1"></h2>
+        </div>
+        <div>
+            <h2 class="O">O</h2>
+            <h2 class="point2"></h2>
+        </div>
+    </div>
     <script src='main.js'></script>
 </body>
 </html>

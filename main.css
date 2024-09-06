@@ -1,17 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'SUSE';
 }
 
-.container{
+.restartbar {
+    width: 300px;
+    height: 5px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    transition: width 5s;
+}
+
+.container {
     display: grid;
     align-items: center;
     justify-items: center;
+    border-radius: 25px;
+    padding: 25px;
     width: 300px;
     height: 300px;
     grid-template-columns: repeat(3, 1fr);
+    transition: background-color 0.25s;
+}
+
+#restart {
+    position: absolute;
+    top: 220px;
+    right: 500px;
 }
 
 .container > div {
@@ -21,6 +40,7 @@ body {
     width: 100px;
     height: 100px;
     cursor: pointer;
+    transition: background-color 0.25s;
 }
 
 a {
@@ -33,11 +53,11 @@ a {
 }
 
 span {
-    font-size: xx-large;
+    font-size: 10px;
 }
 
-.container > div:nth-child(5) {
-    border: black solid 1px;
+.container > div:nth-child(1) {
+    border-top-left-radius: 25px;
 }
 
 .container > div:nth-child(2) {
@@ -45,9 +65,8 @@ span {
     border-right: black solid 1px;
 }
 
-.container > div:nth-child(8) {
-    border-left: black solid 1px;
-    border-right: black solid 1px;
+.container > div:nth-child(3) {
+    border-top-right-radius: 25px;
 }
 
 .container > div:nth-child(4) {
@@ -55,12 +74,53 @@ span {
     border-bottom: black solid 1px;
 }
 
+.container > div:nth-child(5) {
+    border: black solid 1px;
+}
+
 .container > div:nth-child(6) {
     border-top: black solid 1px;
     border-bottom: black solid 1px;
 }
 
-.active{
-    background-color: rgb(199, 211, 223);
-    cursor: not-allowed;
+.container > div:nth-child(7) {
+    border-bottom-left-radius: 25px;
+}
+
+.container > div:nth-child(8) {
+    border-left: black solid 1px;
+    border-right: black solid 1px;
+}
+
+.container > div:nth-child(9) {
+    border-bottom-right-radius: 25px;
+}
+
+.red{
+    background-color: rgba(255, 99, 99, 0.421);
+}
+
+.blue{
+    background-color:rgba(0, 0, 255, 0.278);
+}
+
+#restart {
+    margin-top: 15px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: rotate 0.25s;
+}
+
+.pontos > div {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.X {
+    color: blue;
+}
+
+.O {
+    color: red;
 }
